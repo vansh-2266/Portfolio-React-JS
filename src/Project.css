@@ -1,0 +1,124 @@
+.container-box-project{
+    position:relative;
+    display: flex;
+    /* margin-left: 200px;  */
+} 
+
+.Title-project {
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 70px;
+}
+
+.Title-project  span{
+    color: #E23E57;
+    text-decoration: underline #E23E57;
+}
+
+.grid{
+     margin: 80px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 80px;
+     align-items: center;
+}
+
+.grid > article {
+    background: #333;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    /* text-align: center; */
+    width: 320px;
+    transition: transform 0.3s;   
+}
+
+.grid > article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgb(68, 66, 66);
+}
+
+.grid > article img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 3px solid #fff;
+}
+
+.text{
+    padding: 0 20px 20px;
+}
+
+h3 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    text-align: justify;
+    word-spacing:-1px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+
+.text h3{
+    text-transform: uppercase;
+    color:#E23E57;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 20px 0px;
+    text-align: start;
+}
+
+.text .Project-btn{
+    background: #E23E57;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    /* margin-left: -94px; */
+    /* width: 100%; */
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: start;
+}
+
+.Project-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.text .Project-btn:hover{
+    background: green;
+}
+
+/* tab  */
+
+@media only screen and (max-width: 1215px){
+    .grid > article {
+        width: 250px;
+    }
+}
+
+@media (max-width: 970px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid > article {
+        width: 450px;
+    }
+
+}
+
+@media (max-width: 620px){
+    .grid > article {
+        width: 260px;
+    }
+
+}
+

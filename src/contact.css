@@ -1,0 +1,158 @@
+.main-out{
+    background-color: #333;
+    padding: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+}
+
+.main-out:hover{
+    box-shadow: -0px 0px 10px 10px#E23E57 ;
+    transition: 1s;
+}
+
+.heading-contact {
+    text-align: center;
+}
+
+.heading-contact h1{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.heading-contact h1 span{
+    color: #E23E57;
+    text-decoration: underline #E23E57;
+}
+
+
+.heading-contact p{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label{
+    color: #fff;
+    font-size: large;
+    margin-top: 2vh ;
+}
+
+input{
+    width: 40vw;
+    height: 40px;
+    border-radius: 4px;
+    background: #555;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.msg{
+    height: 20vh;
+    width: 40vw;
+    margin-bottom: 3vh;
+    background: #555;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.Send-btn{
+    text-align: center;
+    width: 40vw;
+    height: 50px;
+    background: #55c7f3;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    font-size: 1.3rem;
+    padding: 5px;
+
+}
+
+.Send-btn:hover{
+    background: green;
+    transition: 1s;
+}
+
+.c-icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.c-icon img:hover{
+    transform: rotate(360deg) ;
+    transition: 1s;
+}
+
+
+@media only screen and (max-width: 1312px){
+    input{
+        width: 70vw;
+    }
+    .msg {
+        height: 30vh;
+        width: 70vw;
+        margin-bottom: 3vh;
+    }
+}
+
+
+/* tab  */
+
+@media only screen and (max-width: 821px){
+    input{
+        width: 73vw;
+    }
+
+    .msg {
+        height: 30vh;
+        width: 73vw;
+        margin-bottom: 3vh;
+    }
+}
+
+@media only screen and (max-width: 427px){
+    .main-out {
+        background-color: #222;
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+        /* margin-left: 26px;
+        margin-right: 26px; */
+    }    
+
+    .Send-btn{
+        width: 172px;
+    }
+
+    input{
+        width: 84vw;
+    }
+
+    .msg {
+        height: 30vh;
+        width: 84vw;
+        margin-bottom: 3vh;
+    }
+
+    .c-icon{
+        margin-top: 70px;
+    }
+
+    .c-icon img{
+        width: 50px;
+    }
+
+    .main-out:hover{
+        box-shadow: none;
+    }
+}
+

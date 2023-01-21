@@ -1,0 +1,270 @@
+.page{
+    background: #222;
+}
+.main{
+    display: flex;
+    margin: 0% 10%;
+    /* border: 2px solid #fff; */
+    border-radius: 15px;
+    padding: 2%;
+    background: #333;
+}
+
+.main:hover{
+    background: #E23E57;
+    scale: 1.05;
+    transition: 1s;
+}
+
+.main img{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.main p{
+    
+    width: 100%;
+    padding: 0 5% 0% 5% ;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 150%;
+    
+}
+
+.resume-btn{
+    border: 2px solid #fff;
+    padding: 15px;
+    margin: 0 0% 5% 5%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+}
+
+.resume-btn a{
+    color: #fff;
+}
+.resume-btn:hover{
+    background: green;
+    transition: 1s;
+}
+
+.About-Me{
+    padding: 2%;
+    font-size: 3rem;
+    color: #fff  ;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.About-Me span{
+    color: #E23E57;
+    text-decoration: underline #E23E57;
+}
+
+.skills-Me{
+    padding: 5% 2% 2% 2%;
+    font-size: 3rem;
+    color: #fff  ;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.skills-Me span{
+    color: #E23E57;
+    text-decoration: underline #E23E57;
+}
+
+
+.mySkillss{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card{
+    width: 18vw;
+    text-align: center;
+    background: #333;
+    border-radius: 10px ;
+}
+
+.card:hover{
+    background: #e23e57;
+    transition: 1s;
+    scale: 1.05;
+}
+
+.skill-title{
+    color: #fff;
+}
+
+.learn-btn{
+    background: #333;
+    border: 2px solid #fff;
+    padding: 8px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.learn-btn:hover{
+    background: green;
+    transition: 1s;
+}
+
+.learn-btn a:hover{
+    color: white;
+}
+
+
+/* mini lap  */
+@media only screen and (max-width: 1312px)  {
+    .main p{
+    
+        width: 100%;
+        padding: 0 5% 2% 5% ;
+        font-size: 1.1rem;
+        color: #fff;
+        line-height: 150%;
+        
+    }
+
+    .main img{
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .resume-btn{
+        border: 2px solid #fff;
+        padding: 10px;
+        font-size: 1rem;
+        margin-top: 0%;
+    }
+
+    .mySkillss{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .card{
+        width: 18vw;
+        text-align: center;
+        background: #333;
+        border-radius: 10px ;
+    }
+
+    .card-body img{
+        width: 100px;
+    }
+
+    .skill-title{
+        font-size: 1.2rem;
+    }
+
+    .learn-btn{
+        width: 100px;
+        padding: 5px;
+        
+    }
+    
+}
+
+/* tab  */
+@media only screen and (max-width: 850px)  {
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main img{
+    display: block;
+    margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+  }
+
+  .main p{
+    margin-top: 30px;
+    font-size: 1.3rem;
+   }
+
+   .mySkillss{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card{
+    /* width: 78vw; */
+    text-align: center;
+    background: #333;
+    border-radius: 10px ;
+    margin: auto;
+     width: 79%;
+    
+    padding: 10px;
+}
+
+.card-body img{
+    width: 160px;
+}
+
+.skill-title{
+    font-size: 2.5rem;
+}
+
+.learn-btn{
+    width: 200px;
+    padding: 10px;
+    
+}
+
+
+}
+
+@media only screen and (max-width: 427px){
+    .main p{
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+
+    .About-Me{
+        font-size: 2.5rem;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .skills-Me{
+        font-size: 2.5rem;
+    }
+
+    .card{
+        /* width: 78vw; */
+        text-align: center;
+        background: #333;
+        border-radius: 10px ;
+        margin: auto;
+         width: 69%;
+        
+        padding: 10px;
+    }
+    
+    .card-body img{
+        width: 100px;
+    }
+    
+    .skill-title{
+        font-size: 2rem;
+    }
+    
+    .learn-btn{
+        width: 150px;
+        padding: 10px;
+        
+    }
+}
